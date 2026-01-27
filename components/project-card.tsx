@@ -1,3 +1,4 @@
+'use client';
 import * as React from "react";
 import { ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils"; // Assuming you have a cn utility for merging class names
