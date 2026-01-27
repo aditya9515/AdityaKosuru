@@ -4,8 +4,7 @@ import { ResumeTimeline } from "@/components/resume-timeline";
 
 export default function Home() {
   return (
-    <>
-    
+    <> 
     <Navbar/>
     <DemoOne/>
     <ResumeTimeline/>

@@ -1,10 +1,12 @@
-import { GLSLHills } from "@/components/glsl-hills";
+import { BackgroundPaths } from "@/components/ui/background-paths";
 
 export default function DemoOne() {
   return (
     <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden">
-      <GLSLHills />
+      {/* Background component */}
+      <BackgroundPaths title="Background Paths" />
 
+      {/* Foreground content */}
       <div className="space-y-6 pointer-events-none z-10 text-center absolute">
         <h1 className="font-semibold text-7xl whitespace-pre-wrap">
           <span className="italic text-6xl font-thin">
