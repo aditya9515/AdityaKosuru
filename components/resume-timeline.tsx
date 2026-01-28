@@ -141,7 +141,9 @@ export function ResumeTimeline() {
           <p className="text-sm text-neutral-600 dark:text-neutral-400">
             by EDUCBA
           </p>
-
+          <p className="text-sm font-medium text-neutral-700 dark:text-neutral-300">
+            Verification
+          </p>
           <a
             href="https://coursera.org/verify/M8CZSZNTEZ2C"
             target="_blank"
@@ -183,7 +185,7 @@ export function ResumeTimeline() {
             rel="noopener noreferrer"
             className="text-sm text-blue-600 dark:text-blue-400 underline"
           >
-            coursera.org/verify/DLIEV6JTYT7E
+            View Verification
           </a>
 
           <img
@@ -199,23 +201,24 @@ export function ResumeTimeline() {
       title: "October 27, 2025",
       content: (
         <div className="space-y-4">
-          <ul className="list-disc pl-5 text-neutral-600 dark:text-neutral-400 text-sm space-y-2">
-            <li>
-              <span className="font-medium">Course:</span> Generative AI with Large Language Models — DeepLearning.AI
-            </li>
-            <li>
-              <span className="font-medium">Verification:</span>{" "}
-              <a
-                href="https://coursera.org/verify/ZW7DNYU52LBQ"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline underline-offset-2 hover:text-neutral-800 dark:hover:text-neutral-200"
-              >
-                coursera.org/verify/ZW7DNYU52LBQ
-              </a>
-            </li>
-          </ul>
+          <p className="text-sm font-medium text-neutral-700 dark:text-neutral-300">
+            Course
+          </p>
 
+          <p className="text-sm text-neutral-600 dark:text-neutral-400">
+            Generative AI with Large Language Models — DeepLearning.AI
+          </p>
+          <li>
+            <span className="font-medium">Verification:</span>{" "}
+          </li>
+          <a
+            href="https://coursera.org/verify/ZW7DNYU52LBQ"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-blue-600 dark:text-blue-400 underline"
+          >
+            View Verification
+          </a>
           <img
             src="/course1.png"
             alt="Generative AI with Large Language Models Certificate"
