@@ -219,7 +219,7 @@ export function ResumeTimeline() {
           <img
             src="/course1.png"
             alt="Generative AI with Large Language Models Certificate"
-            className="rounded-lg border shadow-sm max-w-sm"
+            className="mt-3 rounded-lg border"
           />
         </div>
       ),
