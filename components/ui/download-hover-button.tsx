@@ -8,7 +8,7 @@ export default function AnimatedDownloadButton() {
 
   return (
     <a 
-      href="#Your Download Link" 
+      href="/Aditya_Kosuru.pdf" 
       download
       className="absolute center "
     >
