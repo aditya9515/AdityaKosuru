@@ -131,29 +131,96 @@ export function ResumeTimeline() {
     },
 
     {
-      title: "October 27, 2025",
+      title: "April 5, 2025",
       content: (
-        <div>
-          <ul className="list-disc pl-5 text-neutral-600 dark:text-neutral-400 text-sm space-y-2">
-            <li>Machine Learning — Andrew Ng (Coursera)</li>
-            <li>Deep Learning Specialization (Coursera)</li>
-            <li>SQL for Data Science (Coursera)</li>
-          </ul>
+        <div className="space-y-3">
+          <h4 className="text-sm font-medium text-neutral-800 dark:text-neutral-200">
+            MongoDB: The Complete Guide to NoSQL Database Development
+          </h4>
+
+          <p className="text-sm text-neutral-600 dark:text-neutral-400">
+            by EDUCBA
+          </p>
+
+          <a
+            href="https://coursera.org/verify/M8CZSZNTEZ2C"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-blue-600 hover:underline dark:text-blue-400"
+          >
+            View Verification
+          </a>
+
+          <img
+            src="/course3.png"
+            alt="MongoDB Certificate"
+            className="mt-3 rounded-lg border border-neutral-200 dark:border-neutral-800"
+          />
+        </div>
+      ),
+    },
+
+
+    {
+      title: "Oct 16, 2025",
+      content: (
+        <div className="space-y-3">
+          <p className="text-sm font-medium text-neutral-700 dark:text-neutral-300">
+            Course
+          </p>
+
+          <p className="text-sm text-neutral-600 dark:text-neutral-400">
+            Natural Language Processing in TensorFlow — DeepLearning.AI
+          </p>
+
+          <p className="text-sm font-medium text-neutral-700 dark:text-neutral-300">
+            Verification
+          </p>
+
+          <a
+            href="https://coursera.org/verify/DLIEV6JTYT7E"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-blue-600 dark:text-blue-400 underline"
+          >
+            coursera.org/verify/DLIEV6JTYT7E
+          </a>
+
+          <img
+            src="/course2.png"
+            alt="NLP TensorFlow Certificate"
+            className="mt-3 rounded-lg border"
+          />
         </div>
       ),
     },
 
     {
-      title: "Skills",
+      title: "October 27, 2025",
       content: (
-        <div>
-          <div className="text-neutral-600 dark:text-neutral-400 text-sm space-y-1">
-            <p><strong>Languages:</strong> Python, Java, C++, SQL</p>
-            <p><strong>ML & AI:</strong> Transformers, CNN, RNN, Hugging Face</p>
-            <p><strong>Backend:</strong> PostgreSQL, Firebase, Supabase</p>
-            <p><strong>Concepts:</strong> DSA, OOP, Probability, Graph Theory</p>
-            <p><strong>Cloud & Compute:</strong> CUDA, HPC, Cloud Computing</p>
-          </div>
+        <div className="space-y-4">
+          <ul className="list-disc pl-5 text-neutral-600 dark:text-neutral-400 text-sm space-y-2">
+            <li>
+              <span className="font-medium">Course:</span> Generative AI with Large Language Models — DeepLearning.AI
+            </li>
+            <li>
+              <span className="font-medium">Verification:</span>{" "}
+              <a
+                href="https://coursera.org/verify/ZW7DNYU52LBQ"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline underline-offset-2 hover:text-neutral-800 dark:hover:text-neutral-200"
+              >
+                coursera.org/verify/ZW7DNYU52LBQ
+              </a>
+            </li>
+          </ul>
+
+          <img
+            src="/course1.png"
+            alt="Generative AI with Large Language Models Certificate"
+            className="rounded-lg border shadow-sm max-w-sm"
+          />
         </div>
       ),
     },
