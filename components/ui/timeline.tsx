@@ -38,14 +38,31 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
     >
       {/* ✅ TEXT CHANGED ONLY */}
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-        <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
-          My Academic & Project Journey
-        </h2>
-        <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-md">
-          A timeline highlighting my education, hackathon achievements,
-          machine learning projects, and technical growth.
-        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+          {/* LEFT — TEXT */}
+          <div>
+            <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
+              My Academic & Achievements Journey
+            </h2>
+
+            <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-md">
+              A timeline highlighting my education, hackathon achievements, and technical growth.
+            </p>
+          </div>
+
+          {/* RIGHT — IMAGE */}
+          <div className="flex justify-center md:justify-end">
+            <img
+              src="/profile.jpeg"   // 👈 put image inside /public folder
+              alt="Aditya"
+              className="w-48 h-48 md:w-64 md:h-64 object-cover rounded-full border-4 border-neutral-200 dark:border-neutral-800 shadow-lg"
+            />
+          </div>
+
+        </div>
       </div>
+
 
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
         {data.map((item, index) => (

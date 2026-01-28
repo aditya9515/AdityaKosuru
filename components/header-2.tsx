@@ -12,7 +12,7 @@ export function Navbar() {
 	const scrolled = useScroll(10);
 
 	const links = [
-		{ label: 'Home', href: '#' },
+		{ label: 'Home', href: '#hero' },
 		{ label: 'About', href: '#about' },
 		{ label: 'Projects', href: '#projects' },
 		{ label: 'Resume', href: '#resume' },

@@ -33,7 +33,7 @@ export default function ProjectCardDemo() {
           description="A data visualization tool for quantum computing experiments, providing real-time insights and complex data analysis."
           imgSrc="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop"
           link="#"
-        />
+        />  
       </div>
     </div>
   );
