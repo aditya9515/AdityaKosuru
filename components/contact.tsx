@@ -47,12 +47,12 @@ export default function DefaultDemo() {
 				{
 				icon: MailIcon,
 				label: "Email",
-				value: "adityakosuru@gmail.com",
+				value: "kosurusai646@gmail.com",
 				},
 				{
 				icon: PhoneIcon,
 				label: "Phone",
-				value: "+91 XXXXX XXXXX",
+				value: "+91 9515457049",
 				},
 				{
 				icon: MapPinIcon,

@@ -9,11 +9,26 @@ export default function Home() {
   return (
     <> 
     <Navbar/>
-    <DemoOne/>
-    <ResumeTimeline/>
-    <ProjectCardDemo/>
-    <ResumePage/>
-    <DefaultDemo/>
+    <section id="hero">
+      <DemoOne />
+    </section>
+
+    <section id="about">
+      <ResumeTimeline />
+    </section>
+
+    <section id="projects">
+      <ProjectCardDemo />
+    </section>
+
+    <section id="resume">
+      <ResumePage />
+    </section>
+
+    <section id="contact">
+      <DefaultDemo />
+    </section>
+
     </>
   )
 }
