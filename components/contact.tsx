@@ -10,6 +10,11 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { MailIcon, MapPinIcon, PhoneIcon } from "lucide-react";
 
+emailjs.init({
+	publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
+});
+
+
 export default function DefaultDemo() {
 	const [loading, setLoading] = useState(false);
 
