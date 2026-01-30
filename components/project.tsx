@@ -10,10 +10,10 @@ export default function ProjectCardDemo() {
       </h1>
       <div className="grid grid-cols-1 gap-8 p-8 md:grid-cols-2 lg:grid-cols-3">
         <ProjectCard
-          title="Aero Landing Page"
-          description="A comprehensive AI chatbot platform. This project focuses on the design and development of a user-friendly and visually appealing landing page."
-          imgSrc="https://framerusercontent.com/images/hynA7mpUiyBRDcssvVKCDBT14IM.jpg"
-          link="#"
+          title="Metal Health Therapy AI Agent"
+          description=""
+          imgSrc="/ai_agent.png"
+          link="https://github.com/aditya9515/Mental-Health-Therapy-Agent"
         />
         <ProjectCard
           title="Dreamland App Concept"
