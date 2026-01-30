@@ -16,24 +16,42 @@ export default function ProjectCardDemo() {
           link="https://github.com/aditya9515/Mental-Health-Therapy-Agent"
         />
         <ProjectCard
-          title="Dreamland App Concept"
+          title="Landing page form my Metal Health Therapy AI Agent"
           description="A dreamy mobile app prototype designed for mindfulness and relaxation, featuring calming animations and a serene user interface."
-          imgSrc="https://framerusercontent.com/images/D4M3JTkvSAJaqyRe9AzUnHvL8Ao.jpg"
-          link="#"
+          imgSrc="/MHAL.png"
+          link="https://github.com/aditya9515/MHA-landing-page"
           linkText="Explore Concept"
         />
         <ProjectCard
-          title="Quantum Analytics Dashboard"
+          title="Transformer_Text_Style_Prediction"
           description="A data visualization tool for quantum computing experiments, providing real-time insights and complex data analysis."
           imgSrc="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop"
-          link="#"
+          link="https://github.com/aditya9515/Transformer_Text_Style_Prediction?tab=readme-ov-file"
         />
         <ProjectCard
-          title="Quantum Analytics Dashboard"
+          title="CANCER_GATEWAY_APP"
           description="A data visualization tool for quantum computing experiments, providing real-time insights and complex data analysis."
           imgSrc="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop"
-          link="#"
+          link="https://github.com/aditya9515/CANCER_GATEWAY_APP"
         />  
+        <ProjectCard
+          title="meteorite-landings"
+          description="A data visualization tool for quantum computing experiments, providing real-time insights and complex data analysis."
+          imgSrc="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop"
+          link="https://github.com/aditya9515/meteorite-landings"
+        /> 
+        <ProjectCard
+          title="hunting-exo-planets"
+          description="A data visualization tool for quantum computing experiments, providing real-time insights and complex data analysis."
+          imgSrc="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop"
+          link="https://github.com/aditya9515/hunting-exo-planets"
+        /> 
+        <ProjectCard
+          title="Air_quality_analysis"
+          description="A data visualization tool for quantum computing experiments, providing real-time insights and complex data analysis."
+          imgSrc="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop"
+          link="https://github.com/aditya9515/Air_quality_analysis"
+        /> 
       </div>
     </div>
   );
