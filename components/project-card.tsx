@@ -38,7 +38,9 @@ const ProjectCard = React.forwardRef<HTMLDivElement, ProjectCardProps>(
           <h3 className="text-xl font-semibold transition-colors duration-300 group-hover:text-primary">
             {title}
           </h3>
-          <p className="mt-3 flex-1 text-muted-foreground">{description}</p>
+          <p className="text-sm text-muted-foreground max-h-40 overflow-y-auto whitespace-pre-line">
+            {description}
+          </p>
           
           {/* Card Link/CTA */}
           <a
