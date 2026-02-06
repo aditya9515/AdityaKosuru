@@ -13,7 +13,7 @@ export function ResumeTimeline() {
           <div className="flex-1">
             {/* Degree */}
             <p className="text-neutral-800 dark:text-neutral-200 text-sm mb-1">
-              <strong>Bachelor of Science – Data Science</strong>
+              <strong>Bachelor of Technology – Data Science</strong>
             </p>
             <p className="text-neutral-600 dark:text-neutral-400 text-sm">
               Manipal Academy of Higher Education, Udupi
