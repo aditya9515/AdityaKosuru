@@ -15,7 +15,7 @@ export default function ResumePage() {
         {/* Resume Image */}
         <div className="w-full max-w-4xl border rounded-xl overflow-hidden shadow-sm bg-card">
             <Image
-            src="/Aditya_Kosuru_image.jpg"
+            src="/Aditya_Kosuru.jpg"
             alt="Aditya Kosuru Resume"
             width={1200}
             height={1700}
