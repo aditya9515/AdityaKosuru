@@ -1,52 +1,40 @@
 "use client";
 
-import { useState } from "react";
-import emailjs from "@emailjs/browser";
-
 import { ContactCard } from "@/components/contact-card";
-import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
-import { MailIcon, MapPinIcon, PhoneIcon } from "lucide-react";
+import {
+  Instagram,
+  Linkedin,
+  MailIcon,
+  MapPinIcon,
+  PhoneIcon,
+} from "lucide-react";
 
-emailjs.init({
-  publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
-});
+const contactLinks = [
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/aditya-kosuru-rolcy/",
+    icon: Linkedin,
+  },
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/kosuruaditya/",
+    icon: Instagram,
+  },
+  {
+    label: "Email",
+    href: "mailto:kosurusai646@gmail.com",
+    icon: MailIcon,
+  },
+];
 
 export default function DefaultDemo() {
-  const [loading, setLoading] = useState(false);
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setLoading(true);
-
-    const form = e.currentTarget;
-
-    try {
-      await emailjs.sendForm(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
-        form,
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
-      );
-
-      alert("Message sent successfully.");
-      form.reset();
-    } catch (error) {
-      console.error(error);
-      alert("Failed to send message.");
-    } finally {
-      setLoading(false);
-    }
-  };
-
   return (
     <main className="relative flex min-h-screen items-center justify-center p-4">
       <div className="mx-auto max-w-5xl">
         <ContactCard
-          title="Get in touch"
-          description="Fill out the form and I'll respond within 24 hours."
+          title="Aditya Kosuru"
+          description="AI, data, and full-stack developer. Reach me directly through email or social profiles."
           contactInfo={[
             {
               icon: MailIcon,
@@ -66,31 +54,25 @@ export default function DefaultDemo() {
             },
           ]}
         >
-          <form onSubmit={handleSubmit} className="w-full space-y-4">
-            <div className="flex flex-col gap-2">
-              <Label>Name</Label>
-              <Input name="from_name" required />
-            </div>
+          <div className="w-full space-y-3">
+            {contactLinks.map((link) => {
+              const Icon = link.icon;
 
-            <div className="flex flex-col gap-2">
-              <Label>Email</Label>
-              <Input type="email" name="from_email" required />
-            </div>
-
-            <div className="flex flex-col gap-2">
-              <Label>Phone</Label>
-              <Input name="phone" />
-            </div>
-
-            <div className="flex flex-col gap-2">
-              <Label>Message</Label>
-              <Textarea name="message" required />
-            </div>
-
-            <Button className="w-full" type="submit" disabled={loading}>
-              {loading ? "Sending..." : "Submit"}
-            </Button>
-          </form>
+              return (
+                <Button
+                  key={link.href}
+                  asChild
+                  variant="outline"
+                  className="w-full justify-start gap-3"
+                >
+                  <a href={link.href} target="_blank" rel="noopener noreferrer">
+                    <Icon className="h-4 w-4" />
+                    {link.label}
+                  </a>
+                </Button>
+              );
+            })}
+          </div>
         </ContactCard>
       </div>
     </main>

@@ -13,7 +13,7 @@ export default function ResumePage() {
         </h1>
 
         {/* Resume Image */}
-        <div className="w-full max-w-4xl border rounded-xl overflow-hidden shadow-sm bg-card">
+        {/* <div className="w-full max-w-4xl border rounded-xl overflow-hidden shadow-sm bg-card">
             <Image
             src="/Aditya_Kosuru.jpg"
             alt="Aditya Kosuru Resume"
@@ -22,8 +22,8 @@ export default function ResumePage() {
             className="w-full h-auto"
             priority
             />
-        </div>
-        <div className="flex items-center justify-center min-h-screen bg-background">
+        </div> */}
+        <div className="flex items-center justify-center min-h-[100px] bg-background">
             {/* Download Button */}
             <AnimatedDownloadButton />
         </div>

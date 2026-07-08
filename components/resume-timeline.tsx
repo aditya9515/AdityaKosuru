@@ -2,6 +2,13 @@
 
 import React from "react";
 import { Timeline } from "@/components/ui/timeline";
+import { PlayCircle } from "lucide-react";
+
+const demoVideos = [
+  "Projecto",
+  "Postify",
+  "ReleafOps AI",
+];
 
 export function ResumeTimeline() {
   const data = [
@@ -212,6 +219,39 @@ export function ResumeTimeline() {
   return (
     <div className="w-full min-h-screen">
       <Timeline data={data} />
+      <section className="bg-white px-4 pb-20 dark:bg-neutral-950 md:px-10">
+        <div className="mx-auto max-w-7xl space-y-6">
+          <div>
+            <h2 className="text-2xl font-semibold text-black dark:text-white">
+              Project Demo Videos
+            </h2>
+            <p className="mt-2 max-w-2xl text-sm text-neutral-600 dark:text-neutral-400">
+              Short walkthroughs for the main production projects.
+            </p>
+          </div>
+
+          <div className="grid gap-5 md:grid-cols-3">
+            {demoVideos.map((project) => (
+              <div
+                key={project}
+                className="overflow-hidden rounded-lg border border-neutral-200 bg-card shadow-sm dark:border-neutral-800"
+              >
+                <div className="flex aspect-video items-center justify-center bg-muted/40">
+                  <PlayCircle className="h-12 w-12 text-neutral-500 dark:text-neutral-400" />
+                </div>
+                <div className="p-4">
+                  <p className="text-sm font-medium text-neutral-800 dark:text-neutral-200">
+                    {project}
+                  </p>
+                  <p className="mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                    Demo video coming soon
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
