@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
 import { Typewriter } from "@/components/ui/typewriter-text";
 
 function FloatingPaths({ position }: { position: number }) {
@@ -39,7 +38,7 @@ function FloatingPaths({ position }: { position: number }) {
                             pathOffset: [0, 1, 0],
                         }}
                         transition={{
-                            duration: 20 + Math.random() * 10,
+                            duration: 20 + path.id * 0.25,
                             repeat: Infinity,
                             ease: "linear",
                         }}
@@ -65,26 +64,22 @@ export function BackgroundPaths() {
                     transition={{ duration: 2 }}
                     className="max-w-4xl mx-auto"
                 >
-                    {/* ✅ TYPEWRITER TEXT */}
                     <div className="mb-10">
                         <Typewriter
                             text={[
-                                "Looking to get a personal AI agent?",
-                                "Want your own professional webpage?",
-                                "Need data analysis services?",
-                                "Interested in a custom deep learning model?",
-                                "Contact me — Aditya Kosuru.",
+                                "I build AI agents, data platforms, and full-stack products.",
+                                "Projects in AI, big data, and developer tools.",
+                                "Open to AI, data, and software roles.",
+                                "Contact me - Aditya Kosuru.",
                             ]}
                             speed={100}
                             loop={true}
                             className="text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight
-                            text-transparent bg-clip-text 
+                            text-transparent bg-clip-text
                             bg-gradient-to-r from-neutral-900 to-neutral-700/80
                             dark:from-white dark:to-white/80"
                         />
                     </div>
-
-                    
                 </motion.div>
             </div>
         </div>

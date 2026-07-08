@@ -43,11 +43,11 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           {/* LEFT - TEXT */}
           <div>
             <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
-              My Academic & Achievements Journey
+              Education & Project Timeline
             </h2>
 
             <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-md">
-              A timeline highlighting my education, projects, hackathon achievements, certifications, and technical growth.
+              A focused view of my strongest AI, data, and full-stack work.
             </p>
           </div>
 

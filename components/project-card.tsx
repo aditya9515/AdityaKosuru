@@ -10,10 +10,16 @@ export interface ProjectCardProps extends React.HTMLAttributes<HTMLDivElement> {
   description: string;
   link: string;
   linkText?: string;
+  links?: {
+    href: string;
+    label: string;
+  }[];
 }
 
 const ProjectCard = React.forwardRef<HTMLDivElement, ProjectCardProps>(
-  ({ className, imgSrc, title, description, link, linkText = "View Project", ...props }, ref) => {
+  ({ className, imgSrc, title, description, link, linkText = "View Project", links, ...props }, ref) => {
+    const projectLinks = links ?? [{ href: link, label: linkText }];
+
     return (
       <div
         ref={ref}
@@ -43,16 +49,21 @@ const ProjectCard = React.forwardRef<HTMLDivElement, ProjectCardProps>(
           </p>
           
           {/* Card Link/CTA */}
-          <a
-            href={link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group/button mt-4 inline-flex items-center gap-2 text-sm font-medium text-primary transition-all duration-300 hover:underline"
-            onClick={(e) => e.stopPropagation()} // Prevent card's onClick if it has one
-          >
-            {linkText}
-            <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover/button:translate-x-1" />
-          </a>
+          <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2">
+            {projectLinks.map((projectLink) => (
+              <a
+                key={`${projectLink.label}-${projectLink.href}`}
+                href={projectLink.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group/button inline-flex items-center gap-2 text-sm font-medium text-primary transition-all duration-300 hover:underline"
+                onClick={(e) => e.stopPropagation()}
+              >
+                {projectLink.label}
+                <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover/button:translate-x-1" />
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     );
