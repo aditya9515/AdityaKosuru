@@ -5,9 +5,9 @@ import { Timeline } from "@/components/ui/timeline";
 import { PlayCircle } from "lucide-react";
 
 const demoVideos = [
-  "Projecto",
-  "Postify",
-  "ReleafOps AI",
+  { project: "Projecto" },
+  { project: "Postify", videoSrc: "/postify-explanation.mp4" },
+  { project: "ReleafOps AI" },
 ];
 
 export function ResumeTimeline() {
@@ -231,20 +231,31 @@ export function ResumeTimeline() {
           </div>
 
           <div className="grid gap-5 md:grid-cols-3">
-            {demoVideos.map((project) => (
+            {demoVideos.map((demo) => (
               <div
-                key={project}
+                key={demo.project}
                 className="overflow-hidden rounded-lg border border-neutral-200 bg-card shadow-sm dark:border-neutral-800"
               >
-                <div className="flex aspect-video items-center justify-center bg-muted/40">
-                  <PlayCircle className="h-12 w-12 text-neutral-500 dark:text-neutral-400" />
-                </div>
+                {demo.videoSrc ? (
+                  <video
+                    className="aspect-video w-full bg-black object-cover"
+                    controls
+                    preload="metadata"
+                    playsInline
+                  >
+                    <source src={demo.videoSrc} type="video/mp4" />
+                  </video>
+                ) : (
+                  <div className="flex aspect-video items-center justify-center bg-muted/40">
+                    <PlayCircle className="h-12 w-12 text-neutral-500 dark:text-neutral-400" />
+                  </div>
+                )}
                 <div className="p-4">
                   <p className="text-sm font-medium text-neutral-800 dark:text-neutral-200">
-                    {project}
+                    {demo.project}
                   </p>
                   <p className="mt-1 text-xs text-neutral-500 dark:text-neutral-400">
-                    Demo video coming soon
+                    {demo.videoSrc ? "Demo video available" : "Demo video coming soon"}
                   </p>
                 </div>
               </div>
