@@ -5,7 +5,7 @@ import { Timeline } from "@/components/ui/timeline";
 import { PlayCircle } from "lucide-react";
 
 const demoVideos = [
-  { project: "Projecto" },
+  { project: "Projecto", videoSrc: "/projecto-explanation.mp4" },
   { project: "Postify", videoSrc: "/postify-explanation.mp4" },
   { project: "ReleafOps AI" },
 ];
