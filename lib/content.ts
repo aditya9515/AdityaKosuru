@@ -6,8 +6,7 @@ export const projects = [
     title: ["Projecto", "Developer OS"],
     description:
       "A connected desktop and web workspace for managing developer projects, terminals, local runtimes, subscriptions, downloads, and updates from one place.",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
+    image: "/images/projecto.png",
     href: "/projecto",
     github: "https://github.com/aditya9515/Projecto",
     live: "https://projecto.adityakosuru.online/",
@@ -21,8 +20,7 @@ export const projects = [
     title: ["Postify", "Activity to Story"],
     description:
       "A full-stack workflow that turns developer activity into ranked highlights and editable LinkedIn drafts, using protected serverless AI with validation and safety checks.",
-    image:
-      "https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=2069&auto=format&fit=crop",
+    image: "/images/postify.png",
     href: "/postify",
     github: "https://github.com/aditya9515/postify",
     live: "https://postify.adityakosuru.online/",
@@ -36,8 +34,7 @@ export const projects = [
     title: ["ReleafOps AI", "Crisis Command"],
     description:
       "An AI-powered disaster response platform that converts field reports into structured incidents, resources, teams, and human-reviewed dispatch plans.",
-    image:
-      "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?q=80&w=2070&auto=format&fit=crop",
+    image: "/images/releafops-ai.png",
     href: "/releafops",
     github: "https://github.com/aditya9515/GDG",
     live: "https://ngocal.adityakosuru.online/",
