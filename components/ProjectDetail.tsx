@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import type { Project } from "@/lib/content";
 
 export function ProjectDetail({ project }: { project: Project }) {
@@ -19,13 +20,13 @@ export function ProjectDetail({ project }: { project: Project }) {
         ))}
       </div>
       <header className="detail-header site-container">
-        <a className="logo" href="/" aria-label="Back to homepage">
+        <Link className="logo" href="/" aria-label="Back to homepage">
           <span>Aditya</span>
           <span>Kosuru</span>
-        </a>
-        <a className="detail-back" href="/">
+        </Link>
+        <Link className="detail-back" href="/">
           ← Back to work
-        </a>
+        </Link>
       </header>
       <main className="project-detail">
         <div className="site-container detail-hero">
@@ -50,9 +51,11 @@ export function ProjectDetail({ project }: { project: Project }) {
             <a className="detail-next" href={project.github} target="_blank" rel="noreferrer">
               View GitHub <span aria-hidden="true">↗</span>
             </a>
-            <a className="detail-next" href={project.live} target="_blank" rel="noreferrer">
-              Visit live project <span aria-hidden="true">↗</span>
-            </a>
+            {project.live && (
+              <a className="detail-next" href={project.live} target="_blank" rel="noreferrer">
+                Visit live project <span aria-hidden="true">↗</span>
+              </a>
+            )}
           </div>
         </div>
       </main>

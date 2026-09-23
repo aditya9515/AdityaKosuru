@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title description">
+  <title id="title">WarpForge project placeholder</title>
+  <desc id="description">Abstract GPU computation graphic; project image coming soon.</desc>
+  <rect width="1600" height="900" fill="#0d1018"/>
+  <g fill="none" stroke="#91a7ff" stroke-opacity=".28" stroke-width="2">
+    <rect x="960" y="180" width="425" height="425" rx="28"/>
+    <rect x="1010" y="230" width="325" height="325" rx="16"/>
+    <path d="M1030 130V180M1110 130V180M1190 130V180M1270 130V180M1350 130V180M1030 605V655M1110 605V655M1190 605V655M1270 605V655M1350 605V655M910 250H960M910 330H960M910 410H960M910 490H960M910 570H960M1385 250H1435M1385 330H1435M1385 410H1435M1385 490H1435M1385 570H1435"/>
+  </g>
+  <g fill="#91a7ff" opacity=".76">
+    <circle cx="1060" cy="290" r="8"/><circle cx="1150" cy="290" r="8"/><circle cx="1240" cy="290" r="8"/>
+    <circle cx="1060" cy="380" r="8"/><circle cx="1150" cy="380" r="8"/><circle cx="1240" cy="380" r="8"/>
+    <circle cx="1060" cy="470" r="8"/><circle cx="1150" cy="470" r="8"/><circle cx="1240" cy="470" r="8"/>
+  </g>
+  <rect x="76" y="70" width="375" height="52" rx="26" fill="none" stroke="#91a7ff"/>
+  <text x="102" y="103" fill="#91a7ff" font-family="Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="4">GPU PERFORMANCE / CUDA</text>
+  <text x="76" y="420" fill="#ffffff" font-family="Arial, sans-serif" font-size="139" font-weight="800" letter-spacing="-8">WARPFORGE</text>
+  <text x="80" y="821" fill="#b5bed9" font-family="Arial, sans-serif" font-size="23" letter-spacing="6">PROJECT IMAGE COMING SOON</text>
+  <text x="1453" y="821" fill="#91a7ff" font-family="Arial, sans-serif" font-size="28" font-weight="700">05 / 05</text>
+</svg>

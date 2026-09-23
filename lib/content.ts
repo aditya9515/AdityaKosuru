@@ -41,6 +41,34 @@ export const projects = [
     stack: ["Next.js", "FastAPI", "Firebase", "Gemini", "Google Maps", "Cloud Run"],
     reverse: false,
   },
+  {
+    number: "04",
+    discipline: "Payment Risk & ML",
+    year: "2026",
+    title: ["RiskFlow", "Risk Decisions"],
+    description:
+      "A real-time payment risk platform pairing a Go payment API and transactional outbox with Kafka events, Redis features, rules, XGBoost scoring, and an operations dashboard.",
+    image: "/images/riskflow-placeholder.svg",
+    href: "/riskflow",
+    github: "https://github.com/aditya9515/RiskFlow1",
+    live: null,
+    stack: ["Go", "PostgreSQL", "Kafka", "Redis", "Python", "XGBoost", "Spark"],
+    reverse: true,
+  },
+  {
+    number: "05",
+    discipline: "GPU Performance Engineering",
+    year: "2026",
+    title: ["WarpForge", "MiniInfer"],
+    description:
+      "A CUDA/C++ kernel library and small Transformer inference runtime, validated against CPU and framework references and profiled with CUDA events and Nsight.",
+    image: "/images/warpforge-placeholder.svg",
+    href: "/warpforge",
+    github: "https://github.com/aditya9515/WarpForge_",
+    live: null,
+    stack: ["C++17", "CUDA", "cuBLAS", "TensorRT", "PyTorch", "Nsight"],
+    reverse: false,
+  },
 ] as const;
 
 export type Project = (typeof projects)[number];

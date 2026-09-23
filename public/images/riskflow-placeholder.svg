@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title description">
+  <title id="title">RiskFlow project placeholder</title>
+  <desc id="description">Abstract transaction flow graphic; project image coming soon.</desc>
+  <rect width="1600" height="900" fill="#111722"/>
+  <g stroke="#78ecac" stroke-opacity=".16" fill="none">
+    <path d="M0 150H1600M0 300H1600M0 450H1600M0 600H1600M0 750H1600"/>
+    <path d="M200 0V900M400 0V900M600 0V900M800 0V900M1000 0V900M1200 0V900M1400 0V900"/>
+  </g>
+  <path d="M-40 640H185L290 515H470L590 585H805L940 350H1145L1260 425H1640" fill="none" stroke="#78ecac" stroke-width="6"/>
+  <g fill="#78ecac">
+    <circle cx="290" cy="515" r="12"/><circle cx="590" cy="585" r="12"/>
+    <circle cx="940" cy="350" r="12"/><circle cx="1260" cy="425" r="12"/>
+  </g>
+  <rect x="76" y="70" width="315" height="52" rx="26" fill="none" stroke="#78ecac"/>
+  <text x="103" y="103" fill="#78ecac" font-family="Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="4">PAYMENT RISK / ML</text>
+  <text x="76" y="400" fill="#ffffff" font-family="Arial, sans-serif" font-size="158" font-weight="800" letter-spacing="-8">RISKFLOW</text>
+  <text x="80" y="821" fill="#b6c9bd" font-family="Arial, sans-serif" font-size="23" letter-spacing="6">PROJECT IMAGE COMING SOON</text>
+  <text x="1453" y="821" fill="#78ecac" font-family="Arial, sans-serif" font-size="28" font-weight="700">04 / 05</text>
+</svg>

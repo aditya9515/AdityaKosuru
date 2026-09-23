@@ -1,4 +1,4 @@
-import { additionalProjects } from "@/lib/content";
+import { additionalProjects, projects } from "@/lib/content";
 
 export function MoreWork() {
   return (
@@ -16,7 +16,7 @@ export function MoreWork() {
             className="more-work-row"
             key={project.title}
           >
-            <span className="more-work-index">0{index + 4}</span>
+            <span className="more-work-index">{String(projects.length + index + 1).padStart(2, "0")}</span>
             <strong>{project.title}</strong>
             <span>{project.discipline}</span>
             <span>{project.stack}</span>
